@@ -1,103 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>REGISTRATION FORM</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-   <div class="container">
-   <h1 style="text-align: center;">REGISTRATION FORM</h1> 
-   <form> 
-    <table>
-        <tr>
-            <td>
-                Name:
-            </td>
-            <td>
-                <input type="text" placeholder="Name"Name="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Phone Number:
-            </td>
-            <td>
-                <input type="phone" placeholder="**********"Name="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                E-mail id:
-            </td>
-            <td>
-                <input type="email" placeholder="abc@gmail.com">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Password:
-            </td>
-            <td>
-                <input type="password" placeholder="Password">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Gender:
-            </td>
-            <td>
-                <input type="radio" name="gender">Male
-                <input type="radio" name="gender">Female
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Date of Birth:
-            </td>
-            <td>
-                <input type="date">
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Education Qualification:
-            </td>
-            <td>
-                <select>
-                    <option>Select Option</option>
-                    <option>10</option>
-                    <option>12</option>
-                    <option>Graduation</option>
-                    <option>None</option>
-                    
-                </select>
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Address:
-            </td>
-            <td>
-                <textarea rows="4" col="40" placeholder="Address"> 
-                </textarea>   
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="image">Photo:</label>
-                <input type="file" id="image" name="image">   
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </td>
-        </tr>
-
-    </table>
-   </form>
-</body>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <style>
+        body {
+          background-image: url("stu.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+      <body>
+        <h1 class="h1">REGISTRATION FORM</h1>
+        <div class="form">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycby0xJ1C3DY9xOFg71HCg3KHJHRJ6uCBNFq5obY8m4GD5bZBzp_w3ZP0BSabYofw1HW1fQ/exec">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="address">Address:</label><br>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone</label><br>
+            <input type="number" id="phone" name="phone"><br>
+            <label for="phone">Course</label><br>
+            <input type="radio" id="mca" name="course" value="Mca">
+            <label for="mca">MCA</label><br>
+            <input type="radio" id="msc" name="course" value="Msc">
+            <label for="msc">MSc Cs</label><br>
+            <input type="radio" id="stat" name="course" value="Stat">
+            <label for="stat">Msc Stat</label><br><br>
+            <input type="submit" value="Submit">    
+        </form>
+        </div>
+    </body>
 </html>
